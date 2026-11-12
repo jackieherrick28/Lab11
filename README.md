@@ -1,5 +1,4 @@
 # Lab11
-# Lab09
 # By: Jackie Herrick
 # Date: 11/05/26 
   # a. These programs go through the basic system calls on a Portable Operating System Interface (POSIX) operating system. 
