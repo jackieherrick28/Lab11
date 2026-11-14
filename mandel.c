@@ -1,7 +1,7 @@
 /****************************************************************************************************************************************
 *  Filename: mandel.c
-*  Description: a  program in the starter repository (mandel) has been provided that features a command line interface which allows 
-*  adjustment of various parameters and will then generate a Mandelbrot set visualization and save it to a jpeg file. 
+*  Class: CPE 2600 121
+*  Description: creates a picture of the Mandelbrot fractal and saves it as a JPEG image.
 *  Author: Jackie Herrick
 *  Date: 11/12/26
 *  gcc -o mandel mandel.c  jpegrw -ljpeg
