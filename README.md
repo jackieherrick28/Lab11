@@ -1,7 +1,7 @@
 # Lab11
 # By: Jackie Herrick
 # Date: 11/05/26 
-  # a. These programs go through the basic system calls on a Portable Operating System Interface (POSIX) operating system. 
+  # a. Overview 
     # Lab11
       # A program in the starter repository (mandel) has been provided that features a command-line interface which allows 
       # adjustment of various parameters and will then generate a Mandelbrot set visualization and save it to a jpeg file. 
