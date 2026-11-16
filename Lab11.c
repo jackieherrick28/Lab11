@@ -4,7 +4,7 @@
 * Description: A program in the starter repository (mandel) has been provided that features a command line interface which allows 
 *              adjustment of various parameters and will then generate a Mandelbrot set visualization and save it to a jpeg file. 
 * Author: Jackie Herrick
-* Date: 11/14/26
+* Date: 11/15/26
 *
 * gcc Lab11.c -o Lab11 -lm
 * ffmpeg -i mandel%d.jpg mandel.mpg 
