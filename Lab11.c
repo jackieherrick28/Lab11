@@ -4,10 +4,11 @@
 * Description: A program in the starter repository (mandel) has been provided that features a command line interface which allows 
 *              adjustment of various parameters and will then generate a Mandelbrot set visualization and save it to a jpeg file. 
 * Author: Jackie Herrick
-* Date: 11/15/26
+* Date: 11/14/26
 *
 * gcc Lab11.c -o Lab11 -lm
-* ffmpeg -i mandel%d.jpg mandel.mpg 
+* ./Lab11 Number_Processors
+* ffmpeg -framerate 10 -i frame%03d.jpg -c:v libx264 -pix_fmt yuv420p mandel.mp4
 **************************************************************************************************************************************/#include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -56,11 +57,11 @@ int main(int argc, char *argv[])
             if(pid == 0)
             {
                 char output[64];
-                char scale[32];
+                char scale[64];
 
                 snprintf(output, sizeof(output), "frame%03d.jpg", frame);
-
-                double scale_value = 4.0 * pow(0.9, frame);
+                //Zooms in by 2x 
+                double scale_value = 2.0 * pow(0.9, frame);
 
                 snprintf(scale, sizeof(scale),  "%f", scale_value);
 
@@ -69,7 +70,7 @@ int main(int argc, char *argv[])
                 perror("execl");
                 exit(1);
             }
-            //increments active and frame
+            //increments active, s and frame
             active++;
             frame++; 
             s++;
